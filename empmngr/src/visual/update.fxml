@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="468.0" style="-fx-background-color: #3D4956;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UpdateController">
+   <children>
+      <Pane layoutX="-2.0" layoutY="69.0" prefHeight="34.0" prefWidth="470.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-0.39999999999997726" AnchorPane.topAnchor="69.0" />
+      <Label layoutX="96.0" layoutY="14.0" prefHeight="34.0" prefWidth="276.0" text="GESTIONALE DEI DIPENDENTI" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgBack" fitHeight="48.0" fitWidth="55.0" layoutX="8.0" layoutY="8.0" onMouseClicked="#backPushed" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../resource/images/back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgAgg" fitHeight="169.0" fitWidth="218.0" layoutX="150.0" layoutY="116.0" onMouseClicked="#addPushed" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../resource/images/add.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgElim" fitHeight="162.0" fitWidth="169.0" layoutX="154.0" layoutY="300.0" onMouseClicked="#delPushed" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../resource/images/delete.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="197.0" layoutY="273.0" prefHeight="34.0" prefWidth="74.0" text="AGGIUNGI" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="204.0" layoutY="454.0" prefHeight="34.0" prefWidth="62.0" text="ELIMINA" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
